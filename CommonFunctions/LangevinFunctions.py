@@ -14,7 +14,7 @@ class LF():
         return
     
     def BrownianTrans(self, DT, NAxes, TStep, NSteps):
-        # BrownianTrans function
+        """ BrownianTrans function
         # generates random translational motion of N coordinates 
         # using DT and TStep
         # ================INPUTS============= 
@@ -23,7 +23,7 @@ class LF():
         # TStep is time step relative to DT
         # NSteps is number of steps to simulate
         # ================OUTPUT============= 
-        # coordinates are coordinates over time
+        # coordinates are coordinates over time"""
         
         # get dimensionless translational diffusion coefficient (good explanation
         # in Allen, M. P.; Tildesley, D. J. Computer Simulation of Liquids,
@@ -39,7 +39,7 @@ class LF():
         return coordinates
 
     def BrownianRot(self, DR, TStep, NSteps):
-        # BrownianRot function
+        """ BrownianRot function
         # generates random rotational motion
         # using DR and TStep
         # ================INPUTS============= 
@@ -47,7 +47,7 @@ class LF():
         # TStep is time step relative to DT
         # NSteps is number of steps to simulate
         # ================OUTPUT============= 
-        # sph_coords are theta, phi over time
+        # sph_coords are theta, phi over time """
 
         # generate spherical coordinates using method of Hunter, G. L.;
         # Edmond, K. V.; Elsesser, M. T.; Weeks, E. R. 
