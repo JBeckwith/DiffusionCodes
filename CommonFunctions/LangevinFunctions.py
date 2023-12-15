@@ -7,7 +7,6 @@ Created on Mon Sep  4 10:00:36 2023
 """
 
 import numpy as np
-import scipy as sp
 
 class LF():
     def __init__(self):
