@@ -46,3 +46,17 @@ class Statistics_Functions():
         bins = np.linspace(np.min(data), np.max(data), int((np.max(data) - np.min(data))/binwidth)+1)
         return bins
     
+    def gamma_pdf(self, x, k, theta):
+        """ gamma_pdf function
+        # takes x, alpha beta and outputs gamma pdf
+        # ================INPUTS============= 
+        # x is x
+        # k is shape parameter
+        # theta is scale parameter
+        # ================OUTPUT============= 
+        # f(x, k, theta) """
+        alpha = k
+        beta = np.divide(1., theta)
+        f = np.divide(np.multiply(np.multiply(np.power(x, np.subtract(alpha, 1.)),
+                np.exp(np.multiply(-beta, x))), np.power(beta, alpha)), sp.special.gamma(alpha))
+        return f
